@@ -5,8 +5,8 @@ Welcome to the JavaScript Basic subject. Throughout this subject we will learn t
 1.  Basic knowledge of programming concepts
 2. Knowledge of what a web site is
 3. Basic knowledge of HTML and CSS
-## Resources and materials for extra research
-#### Sites and newsletters
+## Resources and materials for extra research 🎁
+#### Sites and newsletters 📗
 * [JavaScript Weekly Newsletter](https://javascriptweekly.com/)
 * [dev.to JavaScript corner](https://dev.to/t/javascript)
 * [Medium JavaScript topic](https://medium.com/topic/javascript)
@@ -22,6 +22,6 @@ Welcome to the JavaScript Basic subject. Throughout this subject we will learn t
 * [Eloquent JavaScript](https://eloquentjavascript.net/) - Free beginners book
 * [You don't know JS Books](https://github.com/getify/You-Dont-Know-JS) - Free advanced JavaScript book
 
-## Contact 
+## Contact 📡
 Dragan Gelevski: gdragan6@gmail.com
 Stefan Blazevski: blazevskistefan@gmail.com
