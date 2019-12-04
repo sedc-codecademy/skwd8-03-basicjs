@@ -23,5 +23,5 @@ Welcome to the JavaScript Basic subject. Throughout this subject we will learn t
 * [You don't know JS Books](https://github.com/getify/You-Dont-Know-JS) - Free advanced JavaScript book
 
 ## Contact 📡
-Dragan Gelevski: gdragan6@gmail.com
-Stefan Blazevski: blazevskistefan@gmail.com
+Dejan Jovanov: djovanov92@gmail.com
+Martin Panovski: panovski.martin93@gmail.com
