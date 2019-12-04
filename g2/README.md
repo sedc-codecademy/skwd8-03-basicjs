@@ -24,4 +24,5 @@ Welcome to the JavaScript Basic subject. Throughout this subject we will learn t
 
 ## Contact 📡
 Dejan Jovanov: djovanov92@gmail.com
+
 Martin Panovski: panovski.martin93@gmail.com
