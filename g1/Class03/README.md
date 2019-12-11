@@ -17,9 +17,9 @@ convert(2) ➞ 120
 Create a function that takes a number as an argument, increments the number by +1 and returns the result.
 ### Examples
 ```sh
-addition(3, 2) ➞ 5
-addition(-3, -6) ➞ -9
-addition(7, 3) ➞ 10
+addition(0) ➞ 1
+addition(9) ➞ 10
+addition(-3) ➞ -2
 ```
 ### Notes
 * Don't forget to return the result.
