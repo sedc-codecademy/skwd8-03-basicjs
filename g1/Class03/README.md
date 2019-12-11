@@ -1,4 +1,4 @@
-# Excersises
+# Exercises
 
 
 # Task 1: Convert Minutes into Seconds
@@ -108,6 +108,7 @@ match("mask", "mAskinG") ➞ false
 
 # Task 9: Convert Number to Corresponding Month Name
 Create a function that takes a number and returns its corresponding month name as a string. For example, if you're given 3 as input, your function should return "March", because March is the 3rd month.
+
 | Number | Month Name |
 | ------ | ------ |
 | 1 | January |
@@ -123,6 +124,7 @@ Create a function that takes a number and returns its corresponding month name a
 | 11 | November |
 | 12 | December |
 | any other number | Month with that number does not exists |
+
 ### Examples
 ```sh
 monthName(3) ➞ "March"
