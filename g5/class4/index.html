@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>JavaScript</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/reveal.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/theme/white.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="assets/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'assets/text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'assets/css/print/pdf.css' : 'assets/css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+    <div class="reveal">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+
+            <!-- Slide 1 -->
+            <section style="text-align: center;">
+                <h1>JavaScript</h1>
+                <img src="assets/img/js.png" alt="js" style="border:none; box-shadow:none; width:300px; height:300px;">
+                <p>
+                    <img src="assets/img/lg.png" alt="logo" style="border:none; box-shadow:none;" /><br />
+                    <small>Lecture by <a href="#" target="_blank"> Trainer name</a> & <a href="#"
+							target="_blank">Assistant Name</a> </small></br>
+
+                </p>
+                <p style="font-size: 15px;">© 2019 Seavus Education &amp; Development Center</p>
+            </section>
+
+            <!-- Slide 2 -->
+            <section style="text-align: left;">
+                <h2>Lesson Overview</h2>
+                <ul>
+                    <li>Arrays</li>
+                    <li>Built-in Objects</li>
+                    <li>Looping structures</li>
+                </ul>
+            </section>
+
+
+            <!-- Slide 3 -->
+            <section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+                <h1>Arrays</h1>
+            </section>
+
+
+            <section style="text-align: left;">
+                <h2>Introduction</h2>
+                <ul>
+                    <li>Storing more than one value in a single place</li>
+                    <li>List/Set of values <b>related</b> to each other</li>
+                    <li>Useful when you do not know how many items you need</li>
+                </ul>
+                <p align="center"><img src="assets/img/shopping_array.png"></p>
+            </section>
+
+
+            <section style="text-align: left;">
+                <h2>Creating an array</h2>
+                <ul>
+                    <li>List of comma-separated values </li>
+                    <li>Put this values in opening and closing brackets <b>[]</b> (literal form)</li>
+                    <li>You need to assign it to a varibale - give the structure a name (follow the same naming rules as for other variables)</li>
+                </ul>
+                <p>
+                    <pre><code class="hljs" data-trim contenteditable>
+
+var days = ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun'];
+
+					</code></pre>
+                </p>
+            </section>
+
+            <section style="text-align: left;">
+                <h2>Creating an array (2)</h2>
+                <ul>
+                    <li>You can create an empty array </li>
+                    <li>You can store mix of values in an array</li>
+                    <li>Long live the JavaScript whitespace insensitivity :), we can separate the values in multiple lines for better readability</li>
+                </ul>
+                <p>
+                    <pre><code class="hljs" data-trim contenteditable>
+
+var iAmEmptyArray = []; //an empty array
+var iAmMixedArray = [1, 2, 'I am string', false]; //mixed array
+var authors = [ 'Ernest Hemingway',                
+	'Charlotte Bronte',                
+	'Dante Alighieri',  //A single statement 
+	'Emily Dickinson'   //although in multiple lines           
+]; 
+
+					</code></pre>
+                </p>
+            </section>
+
+
+            <section style="text-align: left;">
+                <h2>Accessing items in array</h2>
+                <ul>
+                    <li>Each item in the array is automatically given a number called <b>index</b>, which can be used to access specific items in the array </li>
+                    <li>Arrays are <em>zero-indexed</em> => subtract one from the item’s spot in the list to get its index value</li>
+                    <li>Get item: <b>nameOfArray[indexOfDesiredItem]</b></li>
+                    <li>E.g. get the second element of array named days: </li>
+                </ul>
+                <p>
+                    <pre><code class="hljs" data-trim contenteditable>
+
+alert(days [1]);
+
+					</code></pre>
+                </p>
+            </section>
+
+            <section style="text-align: left;">
+                <p>
+                    <pre><code class="hljs" data-trim contenteditable>
+
+var days = ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun'];
+
+					</code></pre>
+                </p>
+                <p align="center"><img src="assets/img/array_access.png"></p>
+            </section>
+
+
+            <section style="text-align: left;">
+                <h2>Changing items values</h2>
+                <ul>
+                    <li>Get the item at the desired position and <em>assign</em> it value </li>
+                </ul>
+                <p>
+                    <pre><code class="hljs" data-trim contenteditable>
+
+days[1] = "Monday";
+
+					</code></pre>
+                </p>
+            </section>
+
+            <section style="text-align: left;">
+                <h2>Changing items values (2)</h2>
+                <ul>
+                    <li>Get the number of array's items by using the <em>length property</em> </li>
+                </ul>
+                <p>
+                    <pre><code class="hljs" data-trim contenteditable>
+
+alert('Lenght of days:' + days.length);
+
+					</code></pre>
+                </p>
+                <ul>
+                    <li>Change item at <em>last position</em> </li>
+                </ul>
+                <p>
+                    <pre><code class="hljs" data-trim contenteditable>
+
+days[days.length - 1] = 'Sunday';
+
+					</code></pre>
+                </p>
+                <p>So...you don’t have to supply a literal number for an index (for example, the 0 in days[0]), you can also supply an equation that returns a valid number.</p>
+            </section>
+
+            <section style="text-align: left;">
+                <h2>Adding items</h2>
+                <ul>
+                    <li>Add item as last element of array </li>
+                </ul>
+                <p>
+                    <pre><code class="hljs" data-trim contenteditable>
+
+
+days[days.length] = 'No more days in the week';
+
+					</code></pre>
+                </p>
+
+            </section>
+
+            <section style="text-align: left;">
+                <h2>It gets even easier...</h2>
+                <p>
+                    <pre><code class="hljs" data-trim contenteditable>
+
+days.push('No more days in the week');
+
+					</code></pre>
+                </p>
+            </section>
+
+            <section style="text-align: left;">
+                <h2>...and you can add multiple items too!</h2>
+                <p>
+                    <pre><code class="hljs" data-trim contenteditable>
+
+days.push('No more days in the week', 'Stop adding days, these is no more');
+
+					</code></pre>
+                </p>
+            </section>
+
+            <section style="text-align: left;">
+                <h2>Adding items to the beginning of array</h2>
+                <p>
+                    <pre><code class="hljs" data-trim contenteditable>
+
+//command unshift() allows you to add item to the beginning of the array
+
+var properties = ['red', '14px', 'Arial']; 
+properties.unshift('bold'); 
+
+//result ['bold', 'red', '14px', 'Arial']
+
+					</code></pre>
+                </p>
+
+                <p>
+                    <pre><code class="hljs" data-trim contenteditable>
+
+
+var properties = ['red', '14px', 'Arial']; 
+
+//you can use unshift() to insert multiple items
+properties.unshift('bold', 'italic', 'underlined');
+
+//result ['bold', 'italic', 'underlined', 'red', '14px', 'Arial']
+
+
+					</code></pre>
+                </p>
+
+            </section>
+
+            <section>
+                <div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+                    <div class="sl-block-content"><img src="assets/img/array_add.png"></div>
+                </div>
+            </section>
+
+
+            <section style="text-align: left;">
+                <h2>Deleting items from array</h2>
+                <p>
+                    <pre><code class="hljs" data-trim contenteditable>
+
+//command pop() allows you to remove an item from the end of an array
+//pop() returns the removed item
+
+var p = [0,1,2,3]; 
+var removedItem = p.pop(); 
+
+//result p = [0,1,2]; removedItem = 3;
+
+					</code></pre>
+                </p>
+
+                <p>
+                    <pre><code class="hljs" data-trim contenteditable>
+
+//command shift() allows you to remove an item from the beginning of an array
+//shift() returns the removed item
+
+var p = [0,1,2,3]; 
+var removedItem = p.shift(); 
+
+//result  p = [1,2,3]; removedItem = 0;
+
+
+					</code></pre>
+                </p>
+
+            </section>
+
+
+            <section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+                <h1>Looping structures</h1>
+            </section>
+
+            <section style="text-align: left;">
+                <h2>Introduction</h2>
+                <ul>
+                    <li>Sometimes a script needs to repeat the same series of steps over and over again</li>
+                    <li>In programming language, performing the same task over and over is called a <em>loop</em></li>
+                    <li>Several different types</li>
+                </ul>
+            </section>
+
+            <section style="text-align: left;">
+                <h2>While Loop</h2>
+                <ul>
+                    <li>A <em>while loop</em> repeats a chunk of code as long as a particular condition is true</li>
+                </ul>
+                <p>
+                    <pre><code class="hljs" data-trim contenteditable>
+while(condition) {
+	//javascript to repeat
+}
+
+					</code></pre>
+                </p>
+            </section>
+
+            <section>
+                <div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+                    <div class="sl-block-content"><img src="assets/img/while.png"></div>
+                </div>
+            </section>
+
+
+            <section style="text-align: left;">
+                <h2>While with arrays</h2>
+                <ul>
+                    <li>A <em>while loop</em> can be used to iterate through array's elements</li>
+                </ul>
+                <p>
+                    <pre><code class="hljs" data-trim contenteditable>
+var days = ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun'];
+var counter = 0; 
+while (counter < days.length) {  
+	document.write(days[counter] + ', ');  
+	counter++; 
+} 
+
+					</code></pre>
+                </p>
+            </section>
+
+
+            <section style="text-align: left;">
+                <h2>Do/While loops</h2>
+                <ul>
+                    <li>Less common type of loop</li>
+                    <li>In this type of loop, the conditional test happens at the <em>end</em>, after the loop has run
+                    </li>
+                    <li> As a result, the JavaScript code within the curly braces always run at <em>least once</em>, even if the condition isn’t ever true </li>
+                </ul>
+                <p>
+                    <pre><code class="hljs" data-trim contenteditable>
+do { 
+	// javascript to repeat 
+} while (condition) ; 
+
+					</code></pre>
+                </p>
+            </section>
+
+            <section style="text-align: left;">
+                <h2>For loops</h2>
+                <ul>
+                    <li><em>For loops</em> are usually used for repeating a series of steps a certain number of times, so they often involve some kind of counter variable, a conditional test, and a way of changing the counter variable.</li>
+                    <li>A <em>while loop</em>, with fewer lines of code</li>
+                </ul>
+                <p>
+                    <pre><code class="hljs" data-trim contenteditable>
+for (initialisation; condition; increment/decrement ) { 
+	//perform JavaScript
+} 
+
+					</code></pre>
+                </p>
+            </section>
+
+
+            <section style="text-align: left;">
+                <p>
+                    <pre><code class="hljs" data-trim contenteditable>
+var num = 1; 
+while (num <= 100) { 
+	document.write('Number ' + num + '<br>'); 
+	num += 1; 
+} 
+
+					</code></pre>
+                </p>
+                <p>
+                    <pre><code class="hljs" data-trim contenteditable>
+for (var num=1; num<=100; num++) { 
+	document.write('Number ' + num + '<br>'); 
+} 
+
+					</code></pre>
+                </p>
+            </section>
+
+            <section>
+                <div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+                    <div class="sl-block-content"><img src="assets/img/for_loop.png"></div>
+                </div>
+            </section>
+
+            <section style="text-align: left;">
+                <h2>For with arrays</h2>
+                <p>
+                    <pre><code class="hljs" data-trim contenteditable>
+
+var days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+	for (var i=0; i < days.length; i++) {    
+	document.write(days[i] + ', '); 
+	}
+
+
+					</code></pre>
+                </p>
+                <p>
+                    <pre><code class="hljs" data-trim contenteditable>
+var example = ['first','second','third','last']; 
+for (var j = example.length ; j > 0; j--) {    
+	document.write(example[j-1] + '<br>'); 
+} 
+					</code></pre>
+                </p>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+                    <div class="sl-block-content"><img src="assets/img/while_array.png"></div>
+                </div>
+            </section>
+
+            <section style="text-align: left;">
+                <h2 style="color:#e8643b;">Student Exercise #1</h2>
+                <p>Write a JavaScript function to remove. 'null', '0', '""', 'false', 'undefined' and 'NaN' values from an array.<br> Sample array : [NaN, 0, 15, false, -22, '',undefined, 47, null,100,]<br> Expected result : [15, -22, 47,100]</p>
+            </section>
+
+            <section style="text-align: left;">
+                <h2 style="color:#e8643b;">Student Exercise #2</h2>
+                <ul>
+                    <li><b>Action: </b> Write a JavaScript program to read ten values, determine the largest value, and print it </li>
+                </ul>
+            </section>
+
+            <section style="text-align: left;">
+                <h2 style="color:#e8643b;">Student Exercise #3</h2>
+                <ul>
+                    <li><b>Decription: </b>The Math object allows you to perform mathematical tasks. </li>
+                    <li><b>Math.pow(x,y);</b> - Returns the value of x to the power of y</li>
+                    <li><b>Action: </b> Write a JavaScript program to write the sum of squares of the numbers from 101 to 150 </li>
+                    <li><strong>Time to accomplish:</strong> 15 minutes.</li>
+                </ul>
+            </section>
+
+
+            <section style="text-align: left;">
+                <h2 style="color:#e8643b;">Student Exercise #4</h2>
+                <ul>
+                    <li><b>Action: </b> Write a JavaScript program that will read in an integer and write out its digits
+                    </li>
+                </ul>
+            </section>
+
+            <section style="text-align: left;">
+                <h2 style="color:#e8643b;">Student Exercise - #5</h2>
+                <h4>Numbers of one letter in a string</h4>
+                <p>Write a JavaScript function that accepts two arguments, a string and a letter and the function will count the number of occurrences of the specified letter within the string.<br> Sample arguments : 'w3resource.com', 'o' <br> Expected output
+                    : 2 </p>
+            </section>
+
+            <section style="text-align: left;" data-transition="slide" data-background="#e8643b" data-background-transition="slide">
+                <h3>Homework #1</h3>
+                <p><strong>Title:</strong> Looping structures</p>
+                <p><strong>Description:</strong> Write a loop in JavaScript that in range from 1 till 20 will write in the console every number, and will add the "\n" new line after every <em>even</em> number otherwise it will add " " empty space.</p>
+
+
+            </section>
+
+
+            <!-- Slide 19 -->
+            <section style="text-align: left;">
+                <h1>Thank you!</h1>
+                <p>
+                    <a href="#">Questions?</a> <br>
+                </p>
+            </section>
+        </div>
+
+    </div>
+
+    <script src="assets/lib/js/head.min.js"></script>
+    <script src="assets/js/reveal.js"></script>
+
+    <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+            // Transition speed
+            transitionSpeed: 'default', // default/fast/slow
+
+            // Enable slide navigation via mouse wheel
+            mouseWheel: true,
+
+            // Optional reveal.js plugins
+            dependencies: [{
+                src: 'assets/lib/js/classList.js',
+                condition: function() {
+                    return !document.body.classList;
+                }
+            }, {
+                src: 'assets/plugin/markdown/marked.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'assets/plugin/markdown/markdown.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'assets/plugin/highlight/highlight.js',
+                async: true,
+                condition: function() {
+                    return !!document.querySelector('pre code');
+                },
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }, {
+                src: 'assets/plugin/zoom-js/zoom.js',
+                async: true
+            }, {
+                src: 'assets/plugin/notes/notes.js',
+                async: true
+            }]
+        });
+    </script>
+
+</body>
+
+</html>
