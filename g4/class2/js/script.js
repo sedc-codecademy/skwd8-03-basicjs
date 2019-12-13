@@ -119,7 +119,7 @@ if(playerScore > 100) {
 //adding multiple options
 let fridayCash =  "dsa"; //parseInt(prompt("Enter your budget:"));
 
-if(isNaN(fridayCash)){
+if((fridayCash)){
     console.log("Enter numbers only");
 } else if (fridayCash >= 100){
     console.log("Straight in The Pub");
@@ -132,3 +132,57 @@ if(isNaN(fridayCash)){
 }
 
 //switch
+
+let firdayCashForSwitch = 60;
+let result10 = "";
+
+switch(firdayCashForSwitch) {
+
+    case 50: 
+        result10 = "User has 50 bucks.";
+        break;
+    case 51:   
+        result10 = "User has 51 bucks.";  
+        break;
+    case 52:   
+        result10 = "User has 52 bucks.";    
+        break;
+    case 53:   
+        result10 = "User has 53 bucks.";    
+        break;   
+    default: 
+        result10 = "Amount of money is not in the switch range!";   
+}
+
+console.log("============");
+console.log(result10);
+
+console.log("============");
+
+let dayOfTheWeek = 10;
+switch(dayOfTheWeek) {
+
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break; 
+    case 3:
+        console.log("Wednesday");
+        break;
+    case 4:
+        console.log("Thirsday");
+        break; 
+    case 5:
+        console.log("Friday");
+        break; 
+    case 6:
+        console.log("Saturday");
+        break;
+    case 7:
+        console.log("Sunday");
+        break; 
+    default: 
+        console.log("Invalid input!");                    
+}
