@@ -53,3 +53,27 @@ function a(){
 a();
 console.log("We are in the global scope:");
 console.log(x); // 100
+
+ // ARRAYS
+console.log("WE ARE TALKING ABOUT ARRAYS NOW OK?")
+let numbers = [2, 5, 7, 10]; // indexes start from 0, length counts from 1
+let names = ["Bob", "Jill", "Greg"];
+
+console.log(numbers[1]); // 7
+console.log(names[1]); // Jill
+console.log(names[100]); // undefined  ( js doesn't know what it is )
+console.log(numbers.length); // return the number of items ( doesn't count from 0 )
+
+numbers[0] = 100; // changin the first item
+console.log(numbers[0]);
+// An array  sent as an arguemnt
+function sum(arrayOfNums){ // [100, 5, 7, 10]
+   return arrayOfNums[0] + arrayOfNums[1] + arrayOfNums[2] + arrayOfNums[3]; // 100 + 5 + 7 + 10 = 122
+   // 1. Get items
+   // 2. Calculate numbers 100 + 5 + 7 + 10
+   // 3. Return result 122
+}
+// Here we 
+console.log(sum(numbers));
+
+
