@@ -1,165 +1,149 @@
-# Excersises
+# Exercises
 
-
-# Task 1: Convert Minutes into Seconds
-Write a function that takes an integer minutes and converts it to seconds.
+# Task 0: Create an array
+Create a function that takes an number and creates array with all event numbers till that number.
 ### Examples
 ```sh
-convert(5) ➞ 300
-convert(3) ➞ 180
-convert(2) ➞ 120
+createArray(5) ➞  [1, 2, 3, 4, 5]
+createArray(10) ➞  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+createArray(-5) ➞  []
 ```
 ### Notes
 * Don't forget to return the result.
 
-
-# Task 2: Return the Next Number from the Integer Passed
-Create a function that takes a number as an argument, increments the number by +1 and returns the result.
+# Task 1: Return the First Element in an Array
+Create a function that takes an array and returns the first element.
 ### Examples
 ```sh
-addition(3, 2) ➞ 5
-addition(-3, -6) ➞ -9
-addition(7, 3) ➞ 10
+getFirstValue([1, 2, 3]) ➞ 1
+getFirstValue([80, 5, 100]) ➞ 80
+getFirstValue([-500, 0, 50]) ➞ -500
+```
+### Notes
+* Don't forget to return the result.
+* The first element in an array always has an index of 0.
+* Thry using the build in function [Shift]
+
+
+# Task 2: Reverse an Array
+Write a function to reverse an array.
+### Examples
+```sh
+reverse([1, 2, 3, 4]) ➞ [4, 3, 2, 1]
+reverse([9, 9, 2, 3, 4]) ➞ [4, 3, 2, 9, 9]
+reverse([]) ➞ []
 ```
 ### Notes
 * Don't forget to return the result.
 
-# Task 3: Convert Hours into Seconds
-Write a function that converts hours into seconds.
+# Task 3: Find the Index 
+Create a function that searches for the index of a given item in an array. If the item is present, it should return the index, otherwise, it should return -1.
 ### Examples
 ```sh
-howManySeconds(2) ➞ 7200
-howManySeconds(10) ➞ 36000
-howManySeconds(24) ➞ 86400
+search([1, 2, 3, 4], 3) ➞ 2
+search([2, 4, 6, 8, 10], 8) ➞ 3
+search([1, 3, 5, 7, 9], 11) ➞ -1
+```
+### Notes
+* If the item is not present, return -1.
+* Try using the build in function [IndexOf]
+
+# Task 4: Check if an Array Contains a Given Number
+Write a function to check if an array contains a particular number.
+### Examples
+```sh
+check([1, 2, 3, 4, 5], 3) ➞ true
+check([1, 1, 2, 1, 1], 3) ➞ false
+check([5, 5, 5, 6], 5) ➞ true
+check([], 5) ➞ false
 ```
 ### Notes
 * Don't forget to return the result.
-* Maybe you can use some function from previous tasks.
 
-# Task 4: Return the Remainder from Two Numbers
-There is a single operator in JavaScript, capable of providing the remainder of a division operation. Two numbers are passed as parameters. The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value.
+# Task 5: Negate the Array of Numbers
+Given an array of numbers, negate all elements contained within.
+* Negating a positive value -+n will return -n, because all +'s are removed.
+* Negating a negative value --n will return n, because the first - turns the second minus into a +.
+* 
 ### Examples
 ```sh
-remainder(1, 3) ➞ 1
-remainder(3, 4) ➞ 3
-remainder(-9, 45) ➞ -9
-remainder(5, 5) ➞ 0
-```
-### Notes
-* The tests only use positive and negative integers.
-* Don't forget to return the result.
-
-# Task 5: The Farm Problem
-In this challenge, a farmer is asking you to tell him how many legs can be counted among all his animals. The farmer breeds three species:
-* chickens = 2 legs
-* cows = 4 legs
-* pigs = 4 legs
-
-The farmer has counted his animals and he gives you a subtotal for each species. You have to implement a function that returns the total number of legs of all the animals.
-### Examples
-```sh
-animals(2, 3, 5) ➞ 36
-animals(1, 2, 3) ➞ 22
-animals(5, 2, 8) ➞ 50
+negate([1, 2, 3, 4]) ➞ [-1, -2, -3, -4]
+negate([-1, 2, -3, 4]) ➞ [1, -2, 3, -4]
+negate([]) ➞ []
 ```
 ### Notes
 * Don't forget to return the result.
-* The order of animals passed is animals(chickens, cows, pigs).
-* Remember that the farmer wants to know the total number of legs and not the total number of animals.
+* If you get an empty array, return an empty array: []
 
-# Task 6: Compare Strings by Count of Characters
-Create a function that takes two strings as arguments and return either true or false depending on whether the total number of characters in the first string is equal to the total number of characters in the second string.
+# Task 6: Difference of Max and Min Numbers in Array
+Create a function that takes an array and returns the difference between the biggest and smallest numbers.
 ### Examples
 ```sh
-compare("AB", "CD") ➞ true
-compare("ABC", "DE") ➞ false
-compare("hello", "sedc") ➞ false
+diffMaxMin([10, 4, 1, 4, -10, -50, 32, 21]) ➞ 82
+// Smallest number is -50, biggest is 32.
+diffMaxMin([44, 32, 86, 19]) ➞ 67
+// Smallest number is 19, biggest is 86.
 ```
 ### Notes
 * Don't forget to return the result.
-* You can find more about the [Length] property.
+* Try using [Infinity] and [-Infinity]
 
-# Task 7: Is the Word Singular or Plural?
-Create a function that takes in a word and determines whether or not it is plural. A plural word is one that ends in "s".
+# Task 7: Multiply by Length
+Create a function to multiply all values in an array by the amount of values in that array.
 ### Examples
 ```sh
-isPlural("changes") ➞ true
-isPlural("change") ➞ false
-isPlural("dudes") ➞ true
-isPlural("magic") ➞ false
+MultiplyByLength([2, 3, 1, 0]) ➞ [8, 12, 4, 0]
+MultiplyByLength([4, 1, 1]) ➞ ([12, 3, 3])
+MultiplyByLength([1, 0, 3, 3, 7, 2, 1]) ➞  [7, 0, 21, 21, 49, 14, 7]
+MultiplyByLength([0]) ➞ ([0])
 ```
 ### Notes
 * Don't forget to return the result.
-* Remember that return true (boolean) is not the same as return "true" (string).
-* You can use javascript build function [EndsWith]
+* Try using array [Length] as a multiplier
 
-# Task 8: Case Insensitive Comparison
-Write a function that validates whether two strings are identical. Make it case insensitive.
+# Task 8: Hurdle Jump
+Create a function that takes an array of hurdle heights and a jumper's jump height, and determine whether or not the hurdler can clear all the hurdles.
+
+A hurdler can clear a hurdle if their jump height is greater than or equal to the hurdle height.
 ### Examples
 ```sh
-match("hello", "hELLo") ➞ true
-match("motive", "emotive") ➞ false
-match("venom", "VENOM") ➞ true
-match("mask", "mAskinG") ➞ false
+hurdleJump([1, 2, 3, 4, 5], 5) ➞ true
+hurdleJump([5, 5, 3, 4, 5], 3) ➞ false
+hurdleJump([5, 4, 5, 6], 10) ➞ true
+hurdleJump([1, 2, 1], 1) ➞ false
 ```
 ### Notes
 * Don't forget to return the result.
-* You can use javascript build function [toLowerCase]
+* Return true for the edge case of an empty array of hurdles. (Zero hurdles means that any jump height can clear them).
 
-# Task 9: Convert Number to Corresponding Month Name
-Create a function that takes a number and returns its corresponding month name as a string. For example, if you're given 3 as input, your function should return "March", because March is the 3rd month.
-| Number | Month Name |
-| ------ | ------ |
-| 1 | January |
-| 2 | February |
-| 3 | March |
-| 4 | April |
-| 5 | May |
-| 6 | June |
-| 7 | July |
-| 8 | August |
-| 9 | September |
-| 10 | October |
-| 11 | November |
-| 12 | December |
-| any other number | Month with that number does not exists |
+# Task 9: Generate a Countdown of Numbers in an Array
+Create a function that takes a number as an argument and returns an array of numbers counting down from this number to zero.
+
 ### Examples
 ```sh
-monthName(3) ➞ "March"
-monthName(12) ➞ "December"
-monthName(6) ➞ "June"
+countdown(5) ➞ [5, 4, 3, 2, 1, 0]
+countdown(1) ➞ [1, 0]
+countdown(0) ➞ [0]
 ```
 ### Notes
 * Don't forget to return the result.
-* You can use flow controll structure [switch]
+* The argument will always be greater than or equal to zero.
 
-# Task 10: Truthy or Falsy?
-A value is said to be "truthy" if it evaluates to true in a Boolean context. All values are truthy in JavaScript unless they're one of the following:
-* false
-* null
-* undefined
-* 0
-* [NaN]
-* ""
-
-In JavaScript, an empty object and an empty array are both considered [truthy], but an empty string is considered false when evaluated as a Boolean (this behavior is what we call [falsey]).
-Create a function that takes an argument of any data type and returns 1 if it's [truthy] and 0 if it's [falsey].
+# Task 10: Odd Up, Even Down
+Create a function that goes through the array, incrementing (+1) for each odd number and decrementing (-1) for each even number.
 ### Examples
 ```sh
-isTruthy(0) ➞ 0
-isTruthy(false) ➞ 0
-isTruthy("") ➞ 0
-isTruthy("false") ➞ 1
+transform([1, 2, 3, 4, 5]) ➞ [2, 1, 4, 3, 6]
+transform([3, 3, 4, 3]) ➞ [4, 4, 3, 4]
+transform([2, 2, 0, 8, 10]) ➞ [1, 1, -1, 7, 9]
 ```
 ### Notes
-* You may have to take into account [NaN]'s unique behavior in JavaScript. While other falsey values are equal to themselves, [NaN] != [NaN]
+* Don't forget to return the result.
 
-[Length]: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length>
-[EndsWith]: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith>
-[toLowerCase]: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase>
-[switch]: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch>
-[truthy]: <https://developer.mozilla.org/en-US/docs/Glossary/Truthy>
-[falsey]: <https://developer.mozilla.org/en-US/docs/Glossary/Falsy>
-[NaN]: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN>
+[Shift]: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift>
+[IndexOf]: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf>
+[Infinity]: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity>
+[-Infinity]: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity>
+[Length]: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length>
 
 
