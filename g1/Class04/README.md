@@ -1,7 +1,7 @@
 # Exercises
 
 # Task 0: Create an array
-Create a function that takes an number and creates array with all event numbers till that number.
+Create a function that takes an number and creates array with all numbers till that number.
 ### Examples
 ```sh
 createArray(5) ➞  [1, 2, 3, 4, 5]
