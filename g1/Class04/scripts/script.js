@@ -102,6 +102,62 @@ let arrayWithNumber = [1, 2, 3, 4, 5];
 //     console.log(arrayWithNumber[i], "I = " + i);
 // }
 
-let number = 1.2333333333;
-console.log(number);
-console.log(number.toFixed(2));
+// let number = 1.2333333333;
+// console.log(number);
+// console.log(number.toFixed(2));
+
+// STUDENT EXERCISE 1
+function sumOfPow(min, max) {
+    let sum = 0;
+    for (let i = min; i <= max; i++){
+        sum = sum + Math.pow(i, 2);   
+    }
+    return sum;
+}
+
+// console.log(sumOfPow(101, 150));
+
+// CREATE A FUNCTION THAT TAKES 2 PARAMETERS
+// 1. MIN AND 2. MAX
+// RETURN AN ARRAY OF THE NUMBERS BETWEEN MIN AND MAX
+
+function createArray(min, max) {
+    let arr = [];
+    for (let i = min; i <= max; i++){
+        arr.push(i);   
+    }
+    return arr;
+}
+
+
+// For of loop
+//let arr = createArray(1, 10);
+// let arr2 = ["Trajan", "Ivo"];
+// console.log("ForOf")
+// for (let num of arr2) {
+//     console.log(num);
+// }
+
+
+// for (let i = 0; i < arr.length; i++){
+//     console.log(arr[i]);   
+// }
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// break keyword breaks the loop
+// for (let i = 1; i < arr.length; i++){
+//     if (i % 7 === 0) {
+//         break;
+//     }
+//     console.log(i);
+// }
+
+// continue keyword skips the given index and goes to next item
+
+// for (let i = 1; i < arr.length; i++){
+//     if (i % 2 === 0) {
+//         continue;
+//     }
+//     console.log(i);
+// }
