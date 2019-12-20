@@ -25,7 +25,6 @@ console.log(`This is for developers: ${Date.now()} ${pecati(7)}`);
 alert(pecati("dejan"))
 document.write(pecati(null))
 
-
 // Teacher/Student Example
 // Good logic, but bad structure
 let person = prompt("What are you, teacher or student?");
@@ -38,6 +37,36 @@ let teachers = ["Dejan", "Vukashin"];
 let subjects = ["Math", "Science", "Physics"];
 let students = ["Marin", "Goran", "Milan", "Dejan"];
 let grades = ["A", "B", "F"];
+
+// if(person.toLowerCase() === "teacher") {
+//   for(let i = 0; i < teachers.length; i++) {
+//     if(teachers[i].toLowerCase() === name.toLowerCase()) {
+//       content.innerHTML = "<ul>"
+//       for (const student of students) {
+//         content.innerHTML += `<li>${student}</li>`
+//       }
+//       content.innerHTML += "</ul>"
+
+//       content.innerHTML += "<ul>"
+//       for (const subject of subjects) {
+//         content.innerHTML += `<li>${subject}</li>`
+//       }
+//       content.innerHTML += "</ul>"
+//     }
+//   }
+// } else if(person.toLowerCase() === "student") {
+//   for(let i = 0; i < students.length; i++) {
+//     if(students[i].toLowerCase() === name.toLowerCase()) {
+//       content.innerHTML = "<ul>"
+//       for (const grade of grades) {
+//         content.innerHTML += `<li>${grades}</li>`
+//       }
+//       content.innerHTML += "</ul>"
+//     }
+//   }
+// } else {
+//   console.log('I don\'t know what ' + '"' + person + '"' + ' is!');
+// }
 
 if(person.toLowerCase() === "teacher") {
   for(let i = 0; i < teachers.length; i++) {
