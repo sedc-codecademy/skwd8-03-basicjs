@@ -59,3 +59,25 @@ for(let i = 0; i < numbers.length; i++) {
 
 console.log("=========================");
 console.log(result);
+
+//while loop
+let applesInBasket = 0;
+let basketCapacity = 40;
+
+function addApplesInBasket(howMany) {
+    applesInBasket += howMany;
+}
+
+let counter = 0;
+while(applesInBasket < basketCapacity) {
+    addApplesInBasket(2);
+    console.log("== one itteration")
+    console.log(applesInBasket <= basketCapacity);
+    console.log(applesInBasket)
+    console.log("==========");
+    counter++;
+}
+
+console.log(applesInBasket)
+console.log(counter)
+
