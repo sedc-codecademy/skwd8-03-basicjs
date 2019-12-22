@@ -142,3 +142,26 @@ function makeTable(ingredients) {
 }
 
 recipePanel(recipeInput, ingNumInput, rootNode)
+
+// Another custom table example
+function makeCustomTable(rows, cols) {
+  let tableNode = document.createElement("table")
+
+  let tbodyNode = document.createElement("tbody")
+  tableNode.append(tbodyNode)
+
+  for(let i = 0; i < rows; i++) {
+    let trNode = document.createElement("tr")
+    tbodyNode.append(trNode)
+
+    for(let j = 0; j < cols; j++) {
+      let tdNode = document.createElement("td")
+      trNode.append(tdNode)
+      tdNode.textContent = `Row: ${i} Col: ${j}`
+    }
+  }
+
+  return tableNode
+}
+
+// makeCustomTable(24, 8) // Uncomment to test
