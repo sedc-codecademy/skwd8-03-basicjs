@@ -64,3 +64,24 @@ let firstElement = parentOfAnswer.firstElementChild;
 let lastElement = parentOfAnswer.lastElementChild;
 console.log(firstElement);
 console.log(lastElement);
+
+// Chanigng stuff in html
+// Getting text
+let text = firstElement.innerText; // Only text
+let textWithSpaces = firstElement.textContent; // Text and spaces/tabs
+
+console.log(text);
+console.log(textWithSpaces);
+
+// Change text
+firstElement.innerText = "Changed forever!"; // Overwrite the previous text
+lastElement.innerText += ". This text is added afterwards!"; // Append a new text to the already existing one
+
+// Changing and getting HTML
+
+let htmlOfDiv = parentOfAnswer.innerHTML; // will get 
+console.log(htmlOfDiv);
+
+// Add html elements / overwrite html
+parentOfAnswer.innerHTML += "<h1> This is added with innerHTML </h1>";  // This adds a new element at the end
+// parentOfAnswer.innerHTML = "<h1> This will overwrite everything </h1>"; // This removes all previous html and adds the new element in its place
