@@ -140,10 +140,8 @@ transform([2, 2, 0, 8, 10]) ➞ [1, 1, -1, 7, 9]
 ### Notes
 * Don't forget to return the result.
 
-[Shift]: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift>
-[IndexOf]: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf>
-[Infinity]: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity>
-[-Infinity]: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity>
-[Length]: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length>
-
-
+[Shift](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
+[IndexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
+[Infinity](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity)
+[-Infinity](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity)
+[Length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length)
