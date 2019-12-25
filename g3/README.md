@@ -23,8 +23,8 @@ Welcome to the JavaScript Basic subject. Throughout this subject we will learn t
 * [You don't know JS Books](https://github.com/getify/You-Dont-Know-JS) - Free advanced JavaScript book
 
 #### Exercises 📖
-* [**[Mixed]** W3 Resource](https://www.w3resource.com/javascript-exercises/)
-* [**[Beginners]** JS Hero](https://www.jshero.net/en/success.html)
+* [W3 Resource](https://www.w3resource.com/javascript-exercises/) - Mixed level
+* [JS Hero](https://www.jshero.net/en/success.html) - Beginners level
 
 ## Contact 📡
 Dejan Blazheski: dblazheski96@gmail.com
