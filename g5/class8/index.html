@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>JavaScript</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="assets/css/bootstrap.css">		
+		<link rel="stylesheet" href="assets/css/reveal.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/theme/white.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="assets/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'assets/text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'assets/css/print/pdf.css' : 'assets/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<!-- Slide 1 -->
+				<section style="text-align: center;">
+					<h1>JavaScript</h1>
+					<img src="assets/img/js.png" alt="js" style="border:none; box-shadow:none; width:300px; height:300px;">
+					<p>
+						<img src="assets/img/lg.png" alt="logo" style="border:none; box-shadow:none;" /><br/>
+						<small>Lectcture by <a href="#" target="_blank"> Trainer name</a> & <a href="#" target="_blank">Assistant Name</a> </small></br>
+
+					</p>
+					<p style="font-size: 15px;">© 2019 Seavus Education &amp; Development Center</p>
+				</section>
+				
+				<!-- Slide 2 -->
+				<section style="text-align: left;">
+					<h2>Lecture</h2>
+					<h4>Everything is an object</h4>
+				</section>
+
+				<!-- Slide 3 -->
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Objects</h1>
+				</section>
+
+                <section>
+    				<section style="text-align: left;">
+                        <div class="center">
+        					<h3>Everything is an object.</h3>
+                            <p>(Well, almost everything)</p>
+                        </div>
+    				</section>
+    				<section data-state="scrollToTop"  style="text-align: left;">
+                        <div id="scrollToTop" class="center">
+        					<h3>Everything is an object.</h3>
+                            <p>(Well, almost everything)</p>
+            				
+            					<ul class=" half_split">
+            						<li><b>Primitives</b>
+            						<ul>
+            							<li>Numbers</li>
+            							<li>Strings</li>
+            							<li>Booleans</li>
+            							<li>Null</li>
+            							<li>Undefined</li>
+                                        <li class="hidden"></li>
+                                        <li class="hidden"></li>
+                                        <li class="hidden"></li>
+            						</ul>
+            						</li>
+            						<li><b>Everything else...</b>
+            						<ul>
+            							<li>Arrays</li>
+            							<li>Functions</li>
+            							<li>Objects</li>
+                                        <li>Dates</li>
+                                        <li>Wrappers for Numbers, Strings, Booleans</li>
+            						</ul>
+                                    <b style="float:right">...is an object</b>
+                                    <div class="clear"></div>
+            						</li>
+            					</ul>
+
+                        </div>
+    				</section>
+                </section>
+                
+				<section style="text-align: left;">
+					<h2>Introduction</h2>
+					<ul>
+						<li><em>Objects</em> group together a set of variables and functions to create a model of a something you would recognize from the real world</li>
+						<li>In an object:
+							<ul>
+								<li>Variables become know as <strong>properties</strong> (Tell us more about the object)</li>
+								<li>Functions become know as <strong>methods</strong> (Tasks that are associated with the object or what the object can do)</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+                
+				<section style="text-align: left;">
+					<h2>Introduction (2)</h2>
+					<ul>
+						<li>Like variables and named functions, properties and methods have a name and a value. In an object, that name is called a <strong>key</strong></li>
+						<li>An object <em>cannot have</em> two keys with the same name</li>
+						<li>The value of a property can be a string, number, Boolean, array, or <em>even another object</em>. The value of a method is always a function</li>
+					</ul>
+				</section>
+
+				<section>		
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/object_variables.png"></div>
+					</div>
+				</section>
+
+
+				<section>		
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/hotel_object.png"></div>
+					</div>
+				</section>
+                
+                
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>The Object Oriented Paradigm</h1>
+				</section>
+                
+				<section style="text-align: left;" >
+					<h2>Object-Oriented Programming</h2>
+					<ul>
+                        <li>Objects interacting with one another through methods and properties</li>
+                        <li>Used to store data, structure applications into modules and keeping code clean</li>
+                        <li>A widely accepted definition to classify a programming language such as Object Oriented is based on two requirements: its capability to model a problem through objects and its support of a few principles that grant modularity and code reuse. 
+                            
+                        </li>
+					</ul>
+				</section>
+                
+				<section style="text-align: left;">
+					<h2>Object-Oriented Programming</h2>
+					<ul>
+                        <li>In order to satisfy the first requirement, a language must enable a developer to describe the reality using objects and to define relationships among objects such as the following: 
+                            <ul>
+                                <li><b>Association:</b> This is the object's capability to refer another independent object</li>
+                                <li><b>Aggregation:</b> This is the object's capability to embed one or more independent objects</li>
+                                <li><b>Composition:</b> This is the object's capability to embed one or more dependent objects</li>
+                            </ul>
+                        </li>
+					</ul>
+				</section>
+                
+				<section style="text-align: left;" >
+					<h2>Object-Oriented Programming</h2>
+					<ul>
+                        <li>Commonly, the second requirement is satisfied if a language supports the following principles: 
+                            <ul>
+                                <li><b>Encapsulation:</b> This is the capability to concentrate into a single entity data and code that manipulates it, hiding its internal details</li>
+                                <li><b>Inheritance:</b> This is the mechanism by which an object acquires some or all features from one or more other objects </li>
+                                <li><b>Polymorphism:</b> This is the capability to process objects differently based on their data type or structure</li>
+                            </ul>
+                        </li>
+					</ul>
+				</section>
+                
+				<section style="text-align: left;" class="font90">
+					<h2>JavaScript OOP versus classical OOP </h2>
+					<ul>
+						<li>Classical Object-Oriented programming has two types of abstractions: classes and objects.
+                            <ul>
+                                <li>An object is an abstraction of a real-world entity, can only be created by instantiating classes</li>
+                                <li>A class is an abstraction of an object or another class (in other words, it is a generalization)</li>
+                            </ul>
+                        </li>
+						<li>JavaScript has a different approach to object management, has just one type of abstraction - the objects. An object can be created directly as <b>an abstraction of a real-world entity</b> or as <b>an abstraction of another object (prototype)</b>.</li>
+                        <li>As opposed to the classical OOP approach, the JavaScript approach is sometimes called <i>Prototypal Object-Oriented Programming</i></li>
+					</ul>
+				</section>
+                
+				<section style="text-align: left;" class="font90">
+					<h2>JavaScript OOP versus classical OOP (2)</h2>
+					<ul>
+						<li>In classical OOP inheritance is an operation allowed on classes, in prototypal OOP inheritance is an operation on objects</li>
+						<li>That does not mean that classical OOP is better than prototypal OOP or vice versa. They are simply different approaches.</li>
+                        <li>In classical OOP classes are immutable, that is we cannot add, change, or remove properties or methods at runtime, in prototypal OOP objects and prototypes are extremely flexible</li>
+                        <li>Classical OOP adds an extra level of abstraction with classes, leading to a more verbose code, while prototypal OOP is more immediate and requires a more compact code</li>
+					</ul>
+				</section>
+
+				<section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+					<h1>Creating Objects</h1>
+				</section>
+
+				<section style="text-align: left;">
+					<h2>Literal Notation</h2>
+					<ul>
+						<li>Easiest and most popular method for creating objects</li>
+						<li>The obect is the curly braces and their content</li>
+						<li>Separate each key from its values by using a colon</li>
+						<li>Separate each property and methos with comma (not after the last value)</li>
+					</ul>
+				</section>
+
+
+				<section style="text-align: left;">
+					<p><pre><code class="hljs" data-trim contenteditable>
+var hotel = { 
+	name : "Quay",
+	rooms: 40,
+	booked: 25,
+	gym: true,
+	roomTypes: ['twin', 'double', 'suite'],
+
+	checkAvailability: function(){
+		return this.rooms - this.booked;
+	}
+} ;
+
+					</code></pre></p>
+				</section>
+
+				<section style="text-align: left;">
+					<h2>Accessing an Object</h2>
+					<ul>
+						<li>Properties and methods of an object can be accessed using the <em>dot notation</em></li>
+						<li>You can also access properties using the <em>square brackets</em></li>
+						<li><strong>Dot Notation:</strong> Name of the object, followed by a period, then the name of the property or method you want to access</li>
+						<li>The period is know as <strong>member operator</strong></li>
+					</ul>
+				</section>
+
+				<section>		
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/object_dot_notation.png"></div>
+					</div>
+				</section>
+
+				<!-- <section style="text-align: left;">
+					<h2 style="color:#e8643b;">Example</h2>
+					<ul><li><strong>Decription: </strong>Object creation using literal notation</li>
+						<li><strong>Action: </strong> Write a JavaScript program for managing a simple address book. Each entry should have: first name, last name, age and phone data. The user should be able to: insert new entries, delete current entries, and update existing ones
+						</li>
+						https://www.codecademy.com/forum_questions/55b01b3ce39efec6870005ed
+					</ul>
+				</section> -->
+
+				<section style="text-align: left;">
+					<h2>Constructor Notation</h2>
+					<ul>
+						<li>The <strong>new</strong> keword and the <strong>Object()</strong> constructor create a blank object. You can then add properties and methods to the object using the <strong>dot notation</strong> or <strong>square brackets</strong></li>
+						<li>Each statemenet that adds a property or a method should end in semicolon</li>
+					</ul>
+				</section>
+
+				<section>		
+				<h2>Dot Notation</h2>
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/object_with_contructor.png"></div>
+					</div>
+				</section>
+				<section style="text-align: left;">
+					<h2>Square Brackets</h2>
+					<p><pre><code class="hljs" data-trim contenteditable>
+
+var shape = {
+	width: 600
+	};
+shape["height"] = 400;	
+//result
+//var shape = {
+//	width: 600,
+//	height: 400
+//	};
+					</code></pre></p>
+
+				</section>
+
+				<section style="text-align: left;">
+					<h2>Note</h2>
+					<ul>
+						<li>You can use the dot syntax to add properties and methods to any object you have created (no matter which notation you used to create it)</li>
+						<li>To create an empty objct using the literal notation use: <strong>var hotel = {}</strong></li>
+					</ul>
+				</section>
+
+				<section style="text-align: left;">
+					<h2>Updating Objects</h2>
+					<ul>
+						<li>To update the value of <em>properties</em>, use <strong>dot notation</strong> or <strong>square brackets</strong> (no matter which notation you used to create the object)</li>
+						<li>If property does not exist, it will be added to the object</li>
+						<li>To add new methods you can use only the <strong>dot notation</strong></li>
+						<li>To delete a property, use the <strong>delete</strong> followed by the object name and the property name:
+							<p><pre><code class="hljs" data-trim contenteditable>
+							delete hotel.name;
+							</code></pre></p>
+						</li>
+					</ul>
+				</section>
+
+				<section>		
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/object_update_property.png"></div>
+					    <div class="sl-block-content"><img src="assets/img/object_update_property_square.png"></div>
+					</div>
+				</section>
+
+
+				<section style="text-align: left;">
+					<h2>Constructor Notation (1)</h2>
+					<ul>
+						<li>When you want several objects to represent similar things you can use a function as a <strong>template</strong> for creating objects</li>
+						<li>Like all functions, it contains statemenets which are used for adding properties or methods to the object (which end in semicolon)</li>
+						<li>The <strong>this</strong> keyword is used instead of the object name to indicate that the property or method belongs to the object that  <strong><em>this</em></strong> function creates</li>
+						<li>Constructor function usually begins with a capital letter </li>
+					</ul>
+				</section>
+
+				<section>
+					<section>		
+						<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+							<div class="sl-block-content"><img src="assets/img/constructor.png"></div>
+						</div>
+					</section>
+					<section>		
+						<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+							<div class="sl-block-content"><img src="assets/img/constructor_instances.png"></div>
+						</div>
+					</section>
+				</section>
+
+				<section>		
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/objects_with_contructor.png"></div>
+					</div>
+				</section>
+
+				<section style="text-align: left;">
+					<h2>Constructor Notation (2)</h2>
+					<ul>
+						<li>You can create <strong>instances</strong> of the object using the <strong>constructor</strong> function</li>
+						<li>The <strong>new</strong> keyword followed by a call to the function creates a new object</li>
+						<li>The properties of the objects are given as arguments to the function</li>
+					</ul>
+				</section>
+
+				<section>		
+					<div class="sl-block" data-block-type="image" style="width: 100%; height: 100%;" data-block-id="">
+					    <div class="sl-block-content"><img src="assets/img/object_constructor_call.png"></div>
+					</div>
+				</section>
+
+
+				<section style="text-align: left;">
+					<h2>The 'This' keyword</h2>
+					<ul>
+						<li>Each execution context gets it
+							<ul>
+								<li><b>Regular function call: </b> the <i>this</i> keyword points at the global object (which is the window object in the browser)</li>
+								<li><b>Method call: </b> the <i>this</i> keyword points at the object that is calling the method</li>
+							</ul>
+						</li>
+						<li><strong>The <em>this</em> keyword is not assigned a value until a function where it is defined is actually called</strong></li>
+						<!-- <li>The keyword <strong>this</strong> is commonly used inside functions and objects</li>
+						<li>Where the function is declared alters what this means. It always refers to one object, usually the object in which the function operates</li> -->
+					</ul>
+				</section>
+
+
+				<section style="text-align: left;">
+					<h2>A FUNCTION IN GLOBAL SCOPE (1)</h2>
+					<ul>
+						<li>When a function is created at the top level of a script (that is, not inside another object or function), then it is in the <strong>global scope</strong> or<strong>global context</strong></li>
+						<li>The default object in this context is the window object. So when <strong>this</strong> is used inside a function in the global context it refers to the <em>window object</em></li>
+					</ul>
+					<p><pre><code class="hljs" data-trim contenteditable>
+function windowSize() { 
+	var width= this.innerWidth; 
+	var height = this.innerHeight; 
+	return [height, width]; 
+}
+					</code></pre></p>
+
+				</section>
+
+				<section style="text-align: left;">
+					<h2>A FUNCTION IN GLOBAL SCOPE (2)</h2>
+					<ul>
+						<li>All global variables also become properties of the window object</li>
+					</ul>
+					<p><pre><code class="hljs" data-trim contenteditable>
+
+var width = 600;
+
+function showWidth() { 
+	console.log(this.width);
+}
+
+showWidth(); 
+					</code></pre></p>
+
+				</section>
+
+				<section style="text-align: left;">
+					<h2>A METHOD OF AN OBJECT </h2>
+					<ul>
+						<li>When a function is defined inside an object, it becomes a method. In a method, this refers to the containing object</li>
+					</ul>
+					<p><pre><code class="hljs" data-trim contenteditable>
+
+var shape = {
+	width: 600,
+	height: 400,
+	getArea: function(){
+		return this.width * this.height;
+	}
+}; 
+					</code></pre></p>
+
+				</section>
+
+				<section style="text-align: left;">
+					<h2>FUNCTION EXPRESSION AS METHOD </h2>
+					<ul>
+						<li>If a named function has been defined in global scope, and it is then used as a method of an object, this refers to the object it is contained within</li>
+					</ul>
+					<p><pre><code class="hljs" data-trim contenteditable>
+var width = 600;
+var shape= {width: 300}; 
+
+function showWidth() { 
+	console.log(this.width);
+}
+shape.showWidth = showWidth; 
+shape.showWidth(); // 300 
+
+showWidth(); //600
+					</code></pre></p>
+
+				</section>
+
+
+				<section style="text-align: left;">
+					<p>But not so fast!</p>
+					<p><pre><code class="hljs" data-trim contenteditable>
+var shape = {
+	width: 600,
+	height: 400,
+	getArea: function(){
+
+		function multiply() {
+			console.log(this); //window wtf?
+			return this.width * this.height; // this.width, this.height are undefined, because 'this' is the window object
+		}
+		console.log(this); //shape
+		return multiply(); //NaN
+	}
+}; 
+shape.getArea();
+					</code></pre></p>
+
+				</section>
+
+				<section style="text-align: left;">
+					<h2>Lexical 'this' keyword </h2>
+					<ul>
+						<li>Arrow functions don't get their own <i>this</i> keyword</li>
+						<li>The are using the <i>this</i> keyword of the function they are written in - they have a <b>Lexical this</b></li>
+					</ul>
+					<p><pre><code class="hljs" data-trim contenteditable>
+var shape = {
+	width: 600,
+	height: 400,
+	getArea: function(){
+
+		multiply => () {
+			console.log(this); //shape
+			return this.width * this.height; // the values from the shape object
+		}
+		console.log(this); //shape
+		return multiply(); //240000
+	}
+}; 
+shape.getArea();
+					</code></pre></p>
+
+				</section>
+				<!-- <section style="text-align: left;"> -->
+					<!-- <h1>Exercise 1</h1> -->
+					<!-- <p> -->
+						
+<!-- Write a JavaScript program to list the properties of a JavaScript object.<br> -->
+<!-- Sample object: <br> -->
+<!-- var student = { <br> -->
+<!-- name : "David Rayy", <br> -->
+<!-- sclass : "VI", <br> -->
+<!-- rollno : 12 <br> -->
+<!-- };<br> -->
+<!-- Sample Output: name,sclass,rollno<br> -->
+
+					<!-- </p> -->
+				<!-- </section> -->
+				<section style="text-align: left;">
+					<h1>Exercise 1</h1>
+					<p>
+					Write a JavaScript function to retrieve all the values of an object's properties<br>
+					Sample object: <br>
+var student = { <br>
+name : "David Rayy", <br>
+sclass : "VI", <br>
+rollno : 12 <br>
+};<br>
+Sample Output: "David Rayy","VI",12<br>
+					</p>
+				</section>
+				<section style="text-align: left;">
+					<h1>Exercise 2</h1>
+					<p>
+						
+ Write a JavaScript program to delete the rollno property from the following object. Also print the object before or after deleting the property.<br>
+Sample object: <br>
+var student = { <br>
+name : "David Rayy",<br> 
+sclass : "VI", <br>
+rollno : 12 <br>}
+
+					</p>
+				</section>
+				
+				<section style="text-align: left;">
+					<h1>Exercise 3</h1>
+					<p>
+				Write a JavaScript function to check if an object contains given property
+				
+					</p>
+				</section>
+				<section style="text-align: left;">
+					<h1>Exercise 4</h1>
+					<p>
+				Create a car object with some properties<br>
+				model, color, year, fuel, fuelConsumption and a method that calculate how much fuel you will need to pass some distance.
+				
+					</p>
+				</section>
+				
+				<section style="text-align: left;">
+					<h1>Homework </h1>
+					<p>
+				Create OBJECT animal with two properties and one method:
+				<ul>
+				<li>name</li>
+
+				<li>kind</li>
+
+				<li>speak (method)</li>
+				</ul>
+				<br>
+				this method will take one parameter and will printing in the console the message:
+				<br>
+				e.g. dog.speak(“hey bro!!!”) will write in the console “Dog says: ‘Hey bro!!!’”
+				<br>
+				<b>Bonus: enter the values from prompt() or read them from HTML</b>
+					</p>
+				</section>
+				
+				<section style="text-align: left; font-size: 35px">
+					<h1>Homework </h1>
+					<p>
+				Write a JavaScript program to display the reading status of some book. The object should have the next properties:
+				<ul>
+				<li>title</li>
+
+				<li>author</li>
+
+				<li>readingStatus</li>
+				</ul>
+				<br>
+				and a method that will return info depending on the readingStatus 
+				<br>
+				e.g. Already read 'The Robots of dawn' by Isaac Asimov. (if true) <br>
+				You still need to read 'Mockingjay: The Final Book of The Hunger Games' by Suzanne Collins. (if false).
+				<br>
+				<b>Bonus: enter the values from prompt() or read them from HTML</b>
+					</p>
+				</section>
+				<section style="text-align: left; font-size: 32px">
+					<h1>Bonus Homework </h1>
+					<p>
+				Create object Student with this properties
+				<ul>
+				<li>FirstName</li>
+
+				<li>LastName</li>
+
+				<li>Points</li>
+				<li>Subject</li>
+				<li>DidIPass (method student need to have more than 51points to pass)</li>
+				</ul>
+				<br>
+				Create a HTML page with 4 inputs for First Name, Last Name, Points and Subject and a Button with name “Did I Pass” on click you will collect all information about the student you will store them in object, then call the method DidIPass and print in the HTML the next message: 
+				<br>
+				e.g. Hey studentFullName you did pass the subject studentSubject or <br>
+
+				Hey studentFullName you didn’t pass the subject studentSubject <br>
+
+				<b>Bonus Bonus add property FullName. </b>
+				
+					</p>
+				</section>
+				<!-- Slide 19 -->
+				<section style="text-align: left;">
+					<h1>Thank you!</h1>
+					<p>
+						<a href="#">Questions?</a> <br>
+					</p>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="assets/lib/js/head.min.js"></script>
+		<script src="assets/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				 // Transition speed
+    			transitionSpeed: 'default', // default/fast/slow
+
+				 // Enable slide navigation via mouse wheel
+    			mouseWheel: true,
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'assets/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'assets/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'assets/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'assets/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'assets/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
