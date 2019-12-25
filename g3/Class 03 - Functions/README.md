@@ -156,12 +156,12 @@ isTruthy("false") ➞ 1
 ### Notes
 * You may have to take into account [NaN]'s unique behavior in JavaScript. While other falsey values are equal to themselves, [NaN] != [NaN]
 
-[Length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)
-[EndsWith](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith)
-[toLowerCase](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
-[switch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
-[truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
-[falsey](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
+[Length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)  
+[EndsWith](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith)  
+[toLowerCase](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)  
+[switch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)  
+[truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)  
+[falsey](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)  
 [NaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN)
 
 

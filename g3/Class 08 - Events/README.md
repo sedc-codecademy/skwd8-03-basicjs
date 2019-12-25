@@ -22,4 +22,4 @@ Under the inputs in the HTML create a table element with 4 columns for First Nam
 ### Notes
 * You should have a new table row for every new user you make
 
-[List of Events](https://developer.mozilla.org/en-US/docs/Web/Events)
+[List of Events](https://developer.mozilla.org/en-US/docs/Web/Events)  
