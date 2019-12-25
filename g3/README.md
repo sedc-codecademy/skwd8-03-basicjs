@@ -22,7 +22,7 @@ Welcome to the JavaScript Basic subject. Throughout this subject we will learn t
 * [Eloquent JavaScript](https://eloquentjavascript.net/) - Free beginners book
 * [You don't know JS Books](https://github.com/getify/You-Dont-Know-JS) - Free advanced JavaScript book
 
-#### Exercises
+#### Exercises 📖
 * [**[Mixed]** W3 Resource](https://www.w3resource.com/javascript-exercises/)
 * [**[Beginners]** JS Hero](https://www.jshero.net/en/success.html)
 
