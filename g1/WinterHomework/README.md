@@ -8,7 +8,7 @@ Create a web page that can convert a number entered in an input in digits to the
 Input: 0		Result: zero
 Input: 13		Result: thirteen 	
 Input: 345		Result: three hundred forty-five
-Input: 20056	Result: twenty thousand fifty-six
+Input: 20056	    Result: twenty thousand fifty-six
 ```
 
 ## Standard Calculator
