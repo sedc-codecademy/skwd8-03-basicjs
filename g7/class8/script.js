@@ -26,3 +26,34 @@ btn2.addEventListener("click", hailTheConsole);
 btn2.addEventListener("click", function(){
     console.log("This happens fron another anonymous function!");
 })
+
+// Getting values
+let nameInput = document.getElementById("name");
+let jobInput = document.getElementById("job");
+let jobBtn = document.getElementById("postJobRequest");
+let resultsDiv = document.getElementById("jobResults");
+
+// Less annoying version
+// jobBtn.addEventListener("click", function(){
+//     console.log(`Please hire ${nameInput.value} for the ${jobInput.value} position!`);
+//     nameInput.value = "";
+//     jobInput.value = "";
+// })
+
+jobBtn.addEventListener("click", function(){
+    let text = `Please hire ${nameInput.value} for the ${jobInput.value} position!`;
+    resultsDiv.innerHTML += `<h1> ${text} </h1>`;
+    let h1 = resultsDiv.getElementsByTagName("h1")[0];
+    h1.style.color = "red";
+    nameInput.value = "";
+    jobInput.value = "";
+})
+
+// // Getting values on the start of the script and not in the moment when the button is clicked
+// let nameInput = document.getElementById("name").value;
+// let jobInput = document.getElementById("job").value;
+// let jobBtn = document.getElementById("postJobRequest");
+
+// jobBtn.addEventListener("click", function(){
+//     console.log(`Please hire ${nameInput} for the ${jobInput} position!`);
+// })

@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <title>Document</title>
-    <script src="script.js"></script>
+    <!-- Bad practice to put the script here -->
+    <!-- <script src="script.js"></script> -->
 </head>
 <body>
     <h1 id="mainTitle">Class 8 - DOM Manipulation</h1>
@@ -15,5 +16,11 @@
     <!-- addEventListener  -->
     <button id="clickBaitBtn2">Click with event listener</button>
 
+    <h1>We are starting to use values from inputs</h1>
+    <input id="name" type="text" placeholder="Enter Name">
+    <input id="job" type="text"  placeholder="Enter Job">
+    <button id="postJobRequest">Post Job Request</button>
+    <div id="jobResults"></div>
+    <script src="script.js"></script>
 </body>
 </html>
