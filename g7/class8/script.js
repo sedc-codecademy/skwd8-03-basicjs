@@ -42,8 +42,8 @@ let resultsDiv = document.getElementById("jobResults");
 
 jobBtn.addEventListener("click", function(){
     let text = `Please hire ${nameInput.value} for the ${jobInput.value} position!`;
-    resultsDiv.innerHTML += `<h1> ${text} </h1>`;
-    let h1 = resultsDiv.getElementsByTagName("h1")[0];
+    resultsDiv.innerHTML += `<h1 id="bob"> ${text} </h1>`;
+    let h1 = document.getElementById("bob");
     h1.style.color = "red";
     nameInput.value = "";
     jobInput.value = "";
@@ -57,3 +57,4 @@ jobBtn.addEventListener("click", function(){
 // jobBtn.addEventListener("click", function(){
 //     console.log(`Please hire ${nameInput} for the ${jobInput} position!`);
 // })
+
