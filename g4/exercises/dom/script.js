@@ -7,14 +7,14 @@ let title = app.firstElementChild;
 let content = document.getElementById("content");
 
 function printGrades(subjects, grades, element) {
-    // element.innerHTML = "";
-    element.innerHTML = "<ul id='tempUL'></ul>";
-    let tempUl = document.getElementById("tempUL");
 
+    element.innerHTML = "<ul id='tempUL'></ul>";
+
+    let tempUl = document.getElementById("tempUL");
     for(let i = 0; i < subjects.length; i++) {
         tempUl.innerHTML += `<li>${subjects[i]} : ${grades[i]}</li>`;
     }
-    //element.innerHTML += "</ul>";
+
 }
 
-printGrades(subjects, grades, title);
+printGrades(subjects, grades, content);
