@@ -74,6 +74,11 @@ bob.newFriends.push({
     phone: 4534535356
 });
 
+// get property by input
+let input = prompt("Enter a property name:");
+console.log("Dot input: " + bob.input); // bob does not have any property named input ( This does not connect to the prompt )
+console.log("Square brackets input: " + bob[input]); // This takes the value from the prompt ( string ) and adds it in the square brackets where it finds the KEY with that name 
+
 
 
 
