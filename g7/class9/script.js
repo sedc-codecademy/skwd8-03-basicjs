@@ -63,7 +63,6 @@ let bob = {
 // An array stores multiple things of the same type ( usually )
 // An object describes an entity with multiple values of multiple types
 
-
 // Find first friend name
 console.log(bob.friends[0].name);
 // Find the company name where bob works
