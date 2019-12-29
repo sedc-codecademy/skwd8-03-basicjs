@@ -6,7 +6,7 @@ let emptyArray = [];
 //array with items inside
 let array = [22, "Viktor", false, null];
 
-//accesing the array item value
+//accessing the array item value
 let arrayItemNumberOne = array[0];
 console.log(arrayItemNumberOne)
 
@@ -18,7 +18,6 @@ console.log(days[4]);
 
 //accessing array item value can be used as any other value
 console.log(days[2] === days[4]);
-
 
 //array properties and methods
 let daysLength = days.length;
@@ -78,6 +77,31 @@ while(applesInBasket < basketCapacity) {
     counter++;
 }
 
-console.log(applesInBasket)
-console.log(counter)
+console.log(applesInBasket);
+console.log(counter);
+
+//for of loop
+let array22 = [1,2,3,4,5];
+let result = 0;
+
+for(let item of array22) {   
+    result += item * 2;
+}
+
+console.log(result);
+
+//nested arrays
+let arrayInArray = [[1,2],[4,6],[5,8,9]];
+
+let firstArray = arrayInArray[0];
+console.log(firstArray);
+
+let itemInNestedArray = arrayInArray[1][2];
+let itemInNestedArray2 = arrayInArray[2][1];
+
+console.log(itemInNestedArray);
+console.log(itemInNestedArray2);
+
+
+
 

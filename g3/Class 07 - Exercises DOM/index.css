@@ -1,0 +1,15 @@
+table, td {
+  border: 1px solid green;
+}
+
+th {
+  border: 1px solid red;
+}
+
+.oddRow {
+  background-color: crimson;
+}
+
+.evenRow {
+  background-color: olive;
+}
