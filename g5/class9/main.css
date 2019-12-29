@@ -1,0 +1,141 @@
+*{box-sizing: border-box; -webkit-box-sizing: border-box}
+
+html,
+body
+{
+    margin:0;
+    max-width: 100%;
+    width: 100%;
+    padding:0;
+    font-size: 18px;
+    font-family: Arial;
+    color: #2C291E;
+    background: #F9F7F3;
+}
+
+header
+{
+    background: #0FA3B1;
+}
+
+header > nav
+{
+    background: #B5E2FA;
+}
+
+footer
+{
+    background: #F7A072;
+}
+
+header,
+header > nav,
+section,
+footer,
+footer > nav
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+}
+
+header
+{
+    display: block;
+}
+
+header .header-background
+{
+    background: url('header.jpg');
+    background-position: top top;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-height: 300px;
+}
+
+header .logo
+{
+    max-width: 48px;
+    max-height: 48px;
+}
+
+ul
+{
+    list-style: none;
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+}
+
+ul > li
+{
+    list-style: none;
+    display: flex;   
+    padding: 0 10px; 
+}
+
+section
+{
+    flex-wrap: wrap;
+}
+
+section > div
+{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.todos
+{
+    display: block;
+}
+
+.todos > ul
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.todos > ul > li
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-bottom: 0;
+}
+
+.todos > ul > li > span
+{
+    display: inline-block;
+    padding: 5px;
+}
+.todos > ul > li.done
+{
+    background-color: green;
+}
+
+.todos > ul > li.notdone
+{
+    background-color: red;
+}
+
+footer > nav > ul
+{
+    flex-direction: column;
+    width: 25%;
+}
+
+footer > nav > ul > li
+{
+    flex-direction: row;
+}
