@@ -2,10 +2,14 @@
 
 ## Task 1:  FizzBuzz
 
+#### Part 1
 Create a function that will take a number as parameter and print in console all the numbers to that number.
 * number divisible by 3 print Fizz
 * number divisible by 5 print Buzz
 * number divisible by 3 and divisible by 5 print FizzBuzz
+
+#### Part 2
+Add input in the HTML and a button. On click of the button print the values up to the entered number.
 
 ## Task 2: Number Checker
 #### Part 1
@@ -19,7 +23,7 @@ The function should return an object with the stats as properties. The stats req
 
 * Whats the value of the number (value property)
 * How many digits the number has (numDigits property)
-*  Is the number odd or even (isEven property)
+* Is the number odd or even (isEven property)
 * Is the number positive (isPositive property)
 #### Part 2
 Write user interface for the number checker.
