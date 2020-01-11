@@ -9,7 +9,7 @@ button.addEventListener("click", function() {
 });
 
 let input = document.getElementById("input");
-let button = document.getElementById("button");
+//let button = document.getElementById("button");
 let check = document.getElementById("check");
 let list = document.getElementById("list");
 let pars = document.getElementById("pars");
@@ -52,3 +52,11 @@ document.getElementById("male");
 male.addEventListener("click", function() {
     console.log(document.getElementById("male").value)
 });
+
+//changing style
+let change = document.getElementById("changeStyle");
+
+change.addEventListener("click", function() {
+    document.getElementById("parForChange").style.color = "red";
+    document.getElementById("parForChange").style.fontSize = "40px";
+})
