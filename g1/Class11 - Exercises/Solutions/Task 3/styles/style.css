@@ -1,0 +1,35 @@
+.main-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.color-container {
+  display: flex;
+}
+
+#title {
+  background-color: gray;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.color-container > div {
+  height: 50px;
+  width: 50px;
+  border: 3px black solid;
+  margin-right: 10px;
+}
+
+#color-green {
+  background-color: green;
+}
+#color-blue {
+  background-color: blue;
+}
+#color-red {
+  background-color: red;
+}
+#color-yellow {
+  background-color: yellow;
+}
