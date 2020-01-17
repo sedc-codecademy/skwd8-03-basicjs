@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+
+	<h2>Login - Register Workshop</h2>
+
+    <div style="margin: 5px; padding: 5px; border: 1px solid black; width: 200px; height: 250px;">
+        <h3>Register</h3>
+
+        <label for="register-username">Username: </label>
+        <input type="text" name="register-username" id="register-username">
+
+        <br>
+
+        <label for="register-passsword">Password: </label>
+        <input type="password" name="register-password" id="register-password">
+
+        <br>
+        
+        <p id="register-display"></p>
+
+        <br>
+        <br>
+
+        <button id="register">Register</button>
+    </div>
+
+    <br>
+    <br>
+
+    <div style="margin: 5px; padding: 5px; border: 1px solid black; width: 200px; height: 250px;">
+        <h3>Log In</h3>
+
+        <label for="login-username">Username: </label>
+        <input type="text" name="login-username" id="login-username">
+
+        <br>
+
+        <label for="login-passsword">Password: </label>
+        <input type="password" name="login-password" id="login-password">
+
+        <br>
+        
+        <p id="login-display"></p>
+
+        <br>
+        <br>
+
+        <button id="login">Log In</button>
+        <button id="logout">Log Out</button>
+    </div>
+
+
+    <h2 id="user-display"></h2>
+
+    <div id="adminPanel">
+        <h3>Admin Panel</h3>
+        <ol id="registeredUsers"></ol>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
