@@ -132,11 +132,6 @@ function renderAdminPanel() {
 
     for(let user of userDatabase) {
         adminUserList.innerHTML += `<li>username: ${user.username} - password: ${user.password} - isAdmin: ${user.isAdmin}`;
-        let tempButton = document.getElementById(user.id);
-        
-        tempButton.addEventListener("click", function() {
-            console.log(user.id);
-        })
     }
 }
 
